@@ -544,29 +544,29 @@
     },
     {
     "name": "jld-gateway",
-    "owner_key": "TYS6uGYmw7kQLNK3KHYE8yT175N16sFvURatR9gZw9KuVpbNHycYK",
-    "active_key": "TYS6uGYmw7kQLNK3KHYE8yT175N16sFvURatR9gZw9KuVpbNHycYK",
+    "owner_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
+    "active_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
     "is_lifetime_member": true,
     "is_system_account": true
     },
     {
     "name": "jld-chain",
-    "owner_key": "TYS6A8G4GGL9aEjkdxieRkDXn2DAJKykHwGMivzSdRuMmReTsEfvk",
-    "active_key": "TYS6A8G4GGL9aEjkdxieRkDXn2DAJKykHwGMivzSdRuMmReTsEfvk",
+    "owner_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
+    "active_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
     "is_lifetime_member": true,
     "is_system_account": true
     },
     {
     "name": "jld-district",
-    "owner_key": "TYS6PvWCF3WQ2YzvKA4EQDjwxH4zoLKd5hE3KiTvFJY1pVb9DKM1L",
-    "active_key": "TYS6PvWCF3WQ2YzvKA4EQDjwxH4zoLKd5hE3KiTvFJY1pVb9DKM1L",
+    "owner_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
+    "active_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
     "is_lifetime_member": true,
     "is_system_account": true
     },
     {
     "name": "tyslin-coin",
-    "owner_key": "TYS4z6Zca32qnWjqjsQf69WswCgGYKEQm9BiBN68DZQmmcicr9pHK",
-    "active_key": "TYS4z6Zca32qnWjqjsQf69WswCgGYKEQm9BiBN68DZQmmcicr9pHK",
+    "owner_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
+    "active_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
     "is_lifetime_member": true,
     "is_system_account": true
     }
@@ -624,39 +624,39 @@
     "initial_witness_candidates": [
     {
     "owner_name": "dezzyboy",
-    "block_signing_key": "TYS5X6Gyae4tq49uJ3LeVDymRnNDbWFwpVZqzkmk9ZzBQFEDGgabY"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "zeeshan",
-    "block_signing_key": "TYS8hVi9DP17ctdfTG8zPDNmLSWD6CYmKa9Sfj22edfA3ges9hBq9"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "johnny",
-    "block_signing_key": "TYS816R4zNkroH66rMXdrwcGUySEctRUVMj5XzAGSpmy7upoTPGBK"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "umar",
-    "block_signing_key": "TYS7sNuuTwCfg66J3WfcrW6qvs85wKxfwYpWuJX3DVdEx45GTD9GH"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "danish",
-    "block_signing_key": "TYS7d9NC2zoPX7zpvS3XbrZba8vu7LxihVPxSwnuDohfUYVvgRLKy"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "hassan",
-    "block_signing_key": "TYS8S3q6334wRthZRnR31cbUiJ1PfVESTvGT9uCkjud9pFFYRpB5E"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "nouman",
-    "block_signing_key": "TYS5SV5jZKp6pLv1MFdtyo5edLfaRvg3uCR1m3r8tVtMbBDFPwoQA"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "hamid",
-    "block_signing_key": "TYS8ZJTY1YRbkjFxmv5EzvAHwgDifDkGiuYYCbyYede89jw25abW8"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "johnnylee",
-    "block_signing_key": "TYS7VmmoqLA9zMW6mzMSuV8TCQ7C1jGFsnDrEx5HUvBuqWqRjs7P5"
+    "block_signing_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
     },
     {
     "owner_name": "dezzyboynana",

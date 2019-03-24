@@ -1,5 +1,5 @@
 FROM phusion/baseimage:0.10.1
-MAINTAINER The bitshares decentralized organisation
+MAINTAINER The tyslin decentralized organisation
 
 ENV LANG=en_US.UTF-8
 RUN \
@@ -32,8 +32,8 @@ RUN \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD . /bitshares-core
-WORKDIR /bitshares-core
+ADD . /t-core
+WORKDIR /t-core
 
 # Compile
 RUN \
@@ -56,7 +56,7 @@ RUN \
     mkdir /etc/bitshares && \
     git rev-parse --short HEAD > /etc/bitshares/version && \
     cd / && \
-    rm -rf /bitshares-core
+    rm -rf /t-core
 
 # Home directory $HOME
 WORKDIR /

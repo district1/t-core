@@ -46,15 +46,15 @@ namespace graphene { namespace net {
     public:
       struct last_seen_time_index {};
       struct endpoint_index {};
-      typedef boost::multi_index_container<potential_peer_record, 
-                                           indexed_by<ordered_non_unique<tag<last_seen_time_index>, 
-                                                                         member<potential_peer_record, 
-                                                                                fc::time_point_sec, 
+      typedef boost::multi_index_container<potential_peer_record,
+                                           indexed_by<ordered_non_unique<tag<last_seen_time_index>,
+                                                                         member<potential_peer_record,
+                                                                                fc::time_point_sec,
                                                                                 &potential_peer_record::last_seen_time> >,
-                                                      hashed_unique<tag<endpoint_index>, 
-                                                                    member<potential_peer_record, 
-                                                                           fc::ip::endpoint, 
-                                                                           &potential_peer_record::endpoint>, 
+                                                      hashed_unique<tag<endpoint_index>,
+                                                                    member<potential_peer_record,
+                                                                           fc::ip::endpoint,
+                                                                           &potential_peer_record::endpoint>,
                                                                     std::hash<fc::ip::endpoint> > > > potential_peer_set;
 
     private:
@@ -106,7 +106,7 @@ namespace graphene { namespace net {
         }
         catch (const fc::exception& e)
         {
-          elog("error opening peer database file ${peer_database_filename}, starting with a clean database", 
+          elog("error opening peer database file ${peer_database_filename}, starting with a clean database",
                ("peer_database_filename", _peer_database_filename));
         }
       }
@@ -127,7 +127,7 @@ namespace graphene { namespace net {
       }
       catch (const fc::exception& e)
       {
-        elog("error saving peer database to file ${peer_database_filename}", 
+        elog("error saving peer database to file ${peer_database_filename}",
              ("peer_database_filename", _peer_database_filename));
       }
       _potential_peer_set.clear();

@@ -1,5 +1,5 @@
 {
-    "initial_timestamp": "2019-03-24T01:00:00",
+    "initial_timestamp": "2019-03-24T10:20:00",
     "max_core_supply": "500000000000000",
     "initial_parameters": {
         "current_fees": {
@@ -412,8 +412,8 @@
     },
     {
     "name": "nathan",
-    "owner_key": "TYS68CrRsshxgu3cV7SVaJCrVENfrQbKUfL83he3u3hmxXqPNmFk2",
-    "active_key": "TYS68CrRsshxgu3cV7SVaJCrVENfrQbKUfL83he3u3hmxXqPNmFk2",
+    "owner_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
+    "active_key": "TYS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV",
     "is_lifetime_member": true
     },
     {
@@ -614,7 +614,7 @@
       }
     ],
     "initial_balances": [{
-        "owner": "TYS5U1PHcbcEoskBvho674fwTTu5Vjphh7hVr4kZZ2qxEurmekiSW",
+        "owner": "TYSFAbAx7yuxt725qSZvfwWqkdCwp9ZnUama",
         "asset_symbol": "TYS",
         "amount": "500000000000000"
       }
@@ -703,10 +703,6 @@
     "block_signing_key": "TYS7ybvq2L58wtxvzDG6yoEtzEVxPMaeWk4BS1DHDbwyyGaTFEyaW"
     },
     {
-    "owner_name": "nathan",
-    "block_signing_key": "TYS68CrRsshxgu3cV7SVaJCrVENfrQbKUfL83he3u3hmxXqPNmFk2"
-    },
-    {
     "owner_name": "nick",
     "block_signing_key": "TYS6Ai7do7b8VCUnQw8yd5EhDTvVfbzkpMQZkxSYzmC2fYgCr8nmC"
     },
@@ -719,48 +715,48 @@
     "block_signing_key": "TYS5Vjws8siGMjYWoRGM2osAXuDCsbhRU5Bsn7GhJhZetszb6MiLh"
     },
     {
-        "owner_name": "gene",
-        "block_signing_key": "TYS7EBsTZtFuusbSSc75rR1hmoAMNMbeitHdoxEynabtJRxybXVTF"
+    "owner_name": "gene",
+    "block_signing_key": "TYS7EBsTZtFuusbSSc75rR1hmoAMNMbeitHdoxEynabtJRxybXVTF"
     },
     {
-        "owner_name": "mother",
-        "block_signing_key": "TYS6pWF3jmKrkBpsa8nAtKYseJc7AaXYtd4nydfxSs6CV5DQikDxg"
+    "owner_name": "mother",
+    "block_signing_key": "TYS6pWF3jmKrkBpsa8nAtKYseJc7AaXYtd4nydfxSs6CV5DQikDxg"
     },
     {
-        "owner_name": "danny",
-        "block_signing_key": "TYS5WciXZCVn2vEag3fAxEgAdvmHy6DAsdVKmLnGkuEq6NQ1JVsfq"
+    "owner_name": "danny",
+    "block_signing_key": "TYS5WciXZCVn2vEag3fAxEgAdvmHy6DAsdVKmLnGkuEq6NQ1JVsfq"
     },
     {
-        "owner_name": "julie",
-        "block_signing_key": "TYS5Q9YtCMdUNvUv6fbzh5xgnCZUCavTDqrZYH9UJXDjXQ9Gcpg91"
+    "owner_name": "julie",
+    "block_signing_key": "TYS5Q9YtCMdUNvUv6fbzh5xgnCZUCavTDqrZYH9UJXDjXQ9Gcpg91"
     },
     {
-        "owner_name": "someone",
-        "block_signing_key": "TYS7X4pZcWtz9Kb76nPC8QyR2G91mjhg39f4EeVmbf2QX4rRDwsSR"
+    "owner_name": "someone",
+    "block_signing_key": "TYS7X4pZcWtz9Kb76nPC8QyR2G91mjhg39f4EeVmbf2QX4rRDwsSR"
     },
     {
-        "owner_name": "leigh",
-        "block_signing_key": "TYS6p5WUmwTFwHGCY2fJMFYvCEMuNsBsbihECJASUpRbbe8tYRPts"
+    "owner_name": "leigh",
+    "block_signing_key": "TYS6p5WUmwTFwHGCY2fJMFYvCEMuNsBsbihECJASUpRbbe8tYRPts"
     },
     {
-        "owner_name": "daisy",
-        "block_signing_key": "TYS7N8WsA413JL6gq4wRD2jLmkCuTGvYD2E54KL5sq9q91yXYpWfj"
+    "owner_name": "daisy",
+    "block_signing_key": "TYS7N8WsA413JL6gq4wRD2jLmkCuTGvYD2E54KL5sq9q91yXYpWfj"
     },
     {
-        "owner_name": "benjamin",
-        "block_signing_key": "TYS6qaRaMxKaH9FyqrpHKhMVjcKQSYCzh9RouG23ywLph3ivkti2g"
+    "owner_name": "benjamin",
+    "block_signing_key": "TYS6qaRaMxKaH9FyqrpHKhMVjcKQSYCzh9RouG23ywLph3ivkti2g"
     },
     {
-        "owner_name": "end-begin",
-        "block_signing_key": "TYS8fbbL3TC3FXdNp1o5KDu4r1s4DfJttrw72VmAqvwG1xCQbNdmq"
+    "owner_name": "end-begin",
+    "block_signing_key": "TYS8fbbL3TC3FXdNp1o5KDu4r1s4DfJttrw72VmAqvwG1xCQbNdmq"
     },
     {
-        "owner_name": "begin",
-        "block_signing_key": "TYS8SW9KVKMZMBbi17wRYU7K9o8ePcRatWi34M3KgM7onbY8qCGke"
+    "owner_name": "begin",
+    "block_signing_key": "TYS8SW9KVKMZMBbi17wRYU7K9o8ePcRatWi34M3KgM7onbY8qCGke"
     },
     {
-        "owner_name": "genesis",
-        "block_signing_key": "TYS6c3ibQmBe8rg21McYwc5vJv4HLggnrSZryG4C7kE4ghtoz6JGP"
+    "owner_name": "genesis",
+    "block_signing_key": "TYS6c3ibQmBe8rg21McYwc5vJv4HLggnrSZryG4C7kE4ghtoz6JGP"
     }
   ],
     "initial_committee_candidates": [

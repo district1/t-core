@@ -165,7 +165,7 @@ void application_impl::reset_p2p_node(const fc::path& data_dir)
    {
       // https://bitsharestalk.org/index.php/topic,23715.0.html
       vector<string> seeds = {
-          "//node-east1-b.district1.io:11015",          // East     (USA)
+          "node-east1-b.district1.io:11015",          // East     (USA)
           "node-east1-b.district1.io:11010",               // east1b      (USA)
       };
       for( const string& endpoint_string : seeds )

@@ -849,14 +849,14 @@ namespace graphene { namespace net { namespace detail {
         // timeout for any active peers is two block intervals
         uint32_t active_disconnect_timeout = 10 * _recent_block_interval_in_seconds;
         uint32_t active_send_keepalive_timeout = active_disconnect_timeout / 2;
-        
+
         // set the ignored request time out to 1 second.  When we request a block
         // or transaction from a peer, this timeout determines how long we wait for them
         // to reply before we give up and ask another peer for the item.
         // Ideally this should be significantly shorter than the block interval, because
-        // we'd like to realize the block isn't coming and fetch it from a different 
+        // we'd like to realize the block isn't coming and fetch it from a different
         // peer before the next block comes in.  At the current target of 3 second blocks,
-        // 1 second seems reasonable.  When we get closer to our eventual target of 1 second 
+        // 1 second seems reasonable.  When we get closer to our eventual target of 1 second
         // blocks, this will need to be re-evaluated (i.e., can we set the timeout to 500ms
         // and still handle normal network & processing delays without excessive disconnects)
         fc::microseconds active_ignored_request_timeout = fc::seconds(1);
@@ -914,8 +914,8 @@ namespace graphene { namespace net { namespace detail {
               wlog( "Sending a keepalive message to peer ${peer} who hasn't sent us any messages in the last ${timeout} seconds",
                     ( "peer", active_peer->get_remote_endpoint() )("timeout", active_send_keepalive_timeout ) );
               peers_to_send_keep_alive.push_back(active_peer);
-            }            
-            else if (active_peer->we_need_sync_items_from_peer && 
+            }
+            else if (active_peer->we_need_sync_items_from_peer &&
                      !active_peer->is_currently_handling_message() &&
                      !active_peer->item_ids_requested_from_peer &&
                      active_peer->ids_of_items_to_get.empty())
@@ -966,8 +966,8 @@ namespace graphene { namespace net { namespace detail {
         }
         peers_to_terminate.clear();
 
-        // if we're going to abruptly disconnect anyone, do it here 
-        // (it doesn't yield).  I don't think there would be any harm if this were 
+        // if we're going to abruptly disconnect anyone, do it here
+        // (it doesn't yield).  I don't think there would be any harm if this were
         // moved to the yielding section
         for( const peer_connection_ptr& peer : peers_to_disconnect_forcibly )
         {
@@ -1022,7 +1022,7 @@ namespace graphene { namespace net { namespace detail {
         }
       }
 
-      // this has nothing to do with updating the peer list, but we need to prune this list 
+      // this has nothing to do with updating the peer list, but we need to prune this list
       // at regular intervals, this is a fine place to do it.
       fc::time_point_sec oldest_failed_ids_to_keep(fc::time_point::now() - fc::minutes(15));
       auto oldest_failed_ids_to_keep_iter = _recently_failed_items.get<peer_connection::timestamp_index>().lower_bound(oldest_failed_ids_to_keep);
@@ -1758,7 +1758,7 @@ namespace graphene { namespace net { namespace detail {
       catch (const peer_is_on_an_unreachable_fork&)
       {
         dlog("Peer is on a fork and there's no set of blocks we can provide to switch them to our fork");
-        // we reply with an empty list as if we had an empty blockchain; 
+        // we reply with an empty list as if we had an empty blockchain;
         // we don't want to disconnect because they may be able to provide
         // us with blocks on their chain
       }
@@ -1878,7 +1878,7 @@ namespace graphene { namespace net { namespace detail {
         synopsis = _delegate->get_blockchain_synopsis(reference_point, number_of_blocks_after_reference_point);
 
       // TODO: it's possible that the returned synopsis is empty if the blockchain is empty (that's fine)
-      // or if the reference point is now past our undo history (that's not). 
+      // or if the reference point is now past our undo history (that's not).
       // in the second case, we should mark this peer as one we're unable to sync with and
       // disconnect them.
       if (reference_point != item_hash_t() && synopsis.empty())
@@ -1891,10 +1891,10 @@ namespace graphene { namespace net { namespace detail {
         uint32_t first_block_num_in_ids_to_get = _delegate->get_block_number(original_ids_of_items_to_get.front());
         uint32_t true_high_block_num = first_block_num_in_ids_to_get + original_ids_of_items_to_get.size() - 1;
 
-        // in order to generate a seamless synopsis, we need to be using the same low_block_num as the 
+        // in order to generate a seamless synopsis, we need to be using the same low_block_num as the
         // backend code; the first block in the synopsis will be the low block number it used
         uint32_t low_block_num = synopsis.empty() ? 1 : _delegate->get_block_number(synopsis.front());
-        
+
         do
         {
           if( low_block_num >= first_block_num_in_ids_to_get )
@@ -1920,7 +1920,7 @@ namespace graphene { namespace net { namespace detail {
       try
       {
         std::vector<item_hash_t> blockchain_synopsis = create_blockchain_synopsis_for_peer( peer );
-      
+
         item_hash_t last_item_seen = blockchain_synopsis.empty() ? item_hash_t() : blockchain_synopsis.back();
         dlog( "sync: sending a request for the next items after ${last_item_seen} to peer ${peer}, (full request is ${blockchain_synopsis})",
              ( "last_item_seen", last_item_seen )
@@ -1945,7 +1945,7 @@ namespace graphene { namespace net { namespace detail {
       if( originating_peer->item_ids_requested_from_peer )
       {
         // verify that the peer's the block ids the peer sent is a valid response to our request;
-        // It should either be an empty list of blocks, or a list of blocks that builds off of one of 
+        // It should either be an empty list of blocks, or a list of blocks that builds off of one of
         // the blocks in the synopsis we sent
         if (!blockchain_item_ids_inventory_message_received.item_hashes_available.empty())
         {
@@ -1964,7 +1964,7 @@ namespace graphene { namespace net { namespace detail {
                  ("position", i)
                  ("actual_num", actual_num)
                  ("expected_num", expected_num));
-            fc::exception error_for_peer(FC_LOG_MESSAGE(error, 
+            fc::exception error_for_peer(FC_LOG_MESSAGE(error,
                                                         "You gave an invalid response to my request for sync blocks.  The list of blocks you provided is not sequential, "
                                                         "the ${position}th block in their reply was block number ${actual_num}, "
                                                         "but it should have been number ${expected_num}",
@@ -2160,7 +2160,7 @@ namespace graphene { namespace net { namespace detail {
 
           // append the remaining items to the peer's list
           boost::push_back(originating_peer->ids_of_items_to_get, item_hashes_received);
-          
+
           uint32_t new_number_of_unfetched_items = calculate_unsynced_block_count_from_all_peers();
           if (new_number_of_unfetched_items != _total_number_of_unfetched_items)
             _delegate->sync_status(blockchain_item_ids_inventory_message_received.item_type,
@@ -2974,7 +2974,7 @@ namespace graphene { namespace net { namespace detail {
       {
         throw;
       }
-      catch (const unlinkable_block_exception& e) 
+      catch (const unlinkable_block_exception& e)
       {
         restart_sync_exception = e;
       }
@@ -4064,7 +4064,7 @@ namespace graphene { namespace net { namespace detail {
               }
               std::string error_message = error_message_stream.str();
               wlog(error_message);
-              std::cout << "\033[31m" << error_message;  
+              std::cout << "\033[31m" << error_message;
               _delegate->error_encountered( error_message, fc::oexception() );
               fc::usleep( fc::seconds(5 ) );
             }

@@ -717,6 +717,50 @@
     {
     "owner_name": "x-men",
     "block_signing_key": "TYS5Vjws8siGMjYWoRGM2osAXuDCsbhRU5Bsn7GhJhZetszb6MiLh"
+    },
+    {
+        "owner_name": "gene",
+        "block_signing_key": "TYS7EBsTZtFuusbSSc75rR1hmoAMNMbeitHdoxEynabtJRxybXVTF"
+    },
+    {
+        "owner_name": "mother",
+        "block_signing_key": "TYS6pWF3jmKrkBpsa8nAtKYseJc7AaXYtd4nydfxSs6CV5DQikDxg"
+    },
+    {
+        "owner_name": "danny",
+        "block_signing_key": "TYS5WciXZCVn2vEag3fAxEgAdvmHy6DAsdVKmLnGkuEq6NQ1JVsfq"
+    },
+    {
+        "owner_name": "julie",
+        "block_signing_key": "TYS5Q9YtCMdUNvUv6fbzh5xgnCZUCavTDqrZYH9UJXDjXQ9Gcpg91"
+    },
+    {
+        "owner_name": "someone",
+        "block_signing_key": "TYS7X4pZcWtz9Kb76nPC8QyR2G91mjhg39f4EeVmbf2QX4rRDwsSR"
+    },
+    {
+        "owner_name": "leigh",
+        "block_signing_key": "TYS6p5WUmwTFwHGCY2fJMFYvCEMuNsBsbihECJASUpRbbe8tYRPts"
+    },
+    {
+        "owner_name": "daisy",
+        "block_signing_key": "TYS7N8WsA413JL6gq4wRD2jLmkCuTGvYD2E54KL5sq9q91yXYpWfj"
+    },
+    {
+        "owner_name": "benjamin",
+        "block_signing_key": "TYS6qaRaMxKaH9FyqrpHKhMVjcKQSYCzh9RouG23ywLph3ivkti2g"
+    },
+    {
+        "owner_name": "end-begin",
+        "block_signing_key": "TYS8fbbL3TC3FXdNp1o5KDu4r1s4DfJttrw72VmAqvwG1xCQbNdmq"
+    },
+    {
+        "owner_name": "begin",
+        "block_signing_key": "TYS8SW9KVKMZMBbi17wRYU7K9o8ePcRatWi34M3KgM7onbY8qCGke"
+    },
+    {
+        "owner_name": "genesis",
+        "block_signing_key": "TYS6c3ibQmBe8rg21McYwc5vJv4HLggnrSZryG4C7kE4ghtoz6JGP"
     }
   ],
     "initial_committee_candidates": [
